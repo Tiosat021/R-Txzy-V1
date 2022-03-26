@@ -1,16 +1,17 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(bank)).buffer(), `
-┌────〔 DONASI 〕
-│✙ Gopay
-│  085828764046
-│*TIDAK MEMAKSA UNTUK BERDONASI*
-│✙ Dana
-│  085828764046
-│*TIDAK MEMAKSA UNTUK BERDONASI*
-│✙ Owner
-│ wa.me/6285828764046
+┌────〔 Donasi 〕
+│• Gopay :
+│  0895622816517
+│• Dana :
+│  0895622816517
+│  088233832771
+│• Saweria :
+│  saweria.co/mursid25
+│• Owner
+│  wa.me/62895622816517
 ╰────────────
-`.trim(), 'Jgn Asal Klik', 'BACK', '.menu')
+`.trim(), 'Donasi nya kak >_<', 'Owner', '.owner')
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
