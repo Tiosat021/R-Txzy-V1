@@ -243,15 +243,15 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "rowId": ".donasi"
                                 }, {
                                     "title":      "|🖼️| ❯╾Profile╼-",
-                                    "description": "indentitas kamu di zifabotz.",
+                                    "description": "indentitas kamu di SATTbots",
                                     "rowId": ".profile"
                                 }, {
   "title":  "|👩‍💻| ❯╾jadibot╼-",
-                                    "description": "bergabung bersama bot zifa",
+                                    "description": "bergabung bersama bot SATT",
                                     "rowId": ".jadibot"
                                 }, {
   "title":  "|🙇‍♂️| ❯╾group╼-",
-                                    "description": "bergabung di grub bersama bot zifa",
+                                    "description": "bergabung di grub bersama bot SATTbot",
                                     "rowId": ".gcbot"
                                 }, {
                                     "title": "|💵|  ❯╾Sewa bot╼-",
