@@ -1,19 +1,18 @@
 let handler  = async (m, { conn, usedPrefix }) => { 
 conn.reply(m.chat, `
 ╭═══════════════════════
-║╭──❉ 〔 INFO OWNER 〕 ❉────── 
-║│➸ ```NAMA``` : ROZI
-║│➸ ```UMUR``` : 15thn
-║│➸ ```ASAL``` : PONTIANAK
-║│➸ ```OFFICIAL GRUP``` :
-https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv
-║│➸ ```ISTAGRAM``` : http://instagram.com/zalfapontianak
-║│➸ ```WHATSAPP``` : http://wa.me/6285828764046
+║╭──❉ [ _*Info Owner*_ ] ───❉
+║│• Nama : Satt
+║│• Umur : 19 Tahun
+║│• Asal : Jakarta
+║│• Grup Bot : bit.ly/grupbotsat
+║│• Instagram : instagram.com/satriyosawalll?r=nametag
+║│• WhatsApp : https://wa.me/qr/RDRVXJR5FRSLF1
 ╰────────❉
 `.trim(), m)
 }
 
-handler.help = ['inforozi']
+handler.help = ['infosatriyo']
 handler.tags = ['main', 'utama']
 handler.command = /^(infoary)$/i
 
