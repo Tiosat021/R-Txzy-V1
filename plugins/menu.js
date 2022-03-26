@@ -10,32 +10,30 @@ const defaultMenu = {
   before: `
 ╭══════════════════⬣
 ║╭──❉ 〔 %me 〕 ─❉
-║│➸Hai, %name!
+║│⬣ Hai, %name!
 ║│
-║│➸Tersisa *%limit Limit*
-║│➸Role *%role*
-║│➸Level *%level (%exp / %maxexp)*
-║│➸[%xp4levelup]
-║│➸%totalexp XP secara Total
+║│⬣Tersisa *%limit Limit*
+║│⬣ Role *%role*
+║│⬣ Level *%level (%exp / %maxexp)*
+║│⬣ [%xp4levelup]
+║│⬣%totalexp XP secara Total
 ║│
-║│➸Hari: *%week %weton*
-║│➸Tanggal: *%date*
-║│➸WaktuIslam:*%dateIslamic*
-║│➸Waktu: *%time*
+║│⬣ Hari: *%week %weton*
+║│⬣ Tanggal: *%date*
+║│⬣ WaktuIslam:*%dateIslamic*
+║│⬣ Waktu: *%time*
 ║│
-║│➸Uptime: *%uptime (%muptime)*
-║│➸Database: %rtotalreg dari %totalreg
-║│➸Github :
-║│➸%github
-║│➸Memory Used : 
-║│➸${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+║│⬣ Uptime: *%uptime (%muptime)*
+║│⬣ Database: %rtotalreg dari %totalreg
+║│⬣ Memory Used : 
+║│⬣ ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ╰─────────❉
 %readmore`.trimStart(),
   header: '*║╭──❉ 〔%category〕─❉*',
   body: '║│➸%cmd %islimit %isPremium',
   footer: '*╰───❉*\n',
   after: `
-  ⬣━〔 By Tio 〕━⬣
+  ⬣━〔 _*By Tio*_ 〕━⬣
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -224,16 +222,22 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `╭═══════════════❉
-║╭──❉ 〔 ꧁ঔৣ☠︎SATTbotss❦☠︎ঔৣ꧂ 〕 ─❉
-║│➸Aktif selama ${uptime}
-║│➸Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│➸${conn.blocklist.length} Terblock
-║│➸${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
-║│➸${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-╰─────────❉ `.trim(),
+                        "description": `
+┏━━〔 Status 〕━⬣
+┃⬡ Aktif selama ${uptime}
+┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
+┃⬡ *${conn.blocklist.length}* Terblock
+┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┃
+┃⬡ Script By _*BOTCAHX*_
+┃⬡ Recode : Mursid S
+┃⬡ Run Bot : Heroku
+┃⬡ Tipe SC rfkbot
+┗━━━━━━━━⬣ `.trim(),
                         "footerText": "꧁ঔৣ☠︎SATTbotss❦☠︎ঔৣ꧂",
-                        "buttonText": "click Here",
+                        "buttonText": "ᴄʟɪᴄᴋ ʜᴇʀᴇ",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -501,6 +505,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+    
+    await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', 'BY SATRIYO (+62895622816517)', 'status@broadcast')
     await conn.send2ButtonLoc(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
@@ -537,16 +543,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "udah malam tidur gih •>•"
   if (time >= 4) {
-    res = "Selamat pagi hari •>•"
+    res = "Good Morning"
   }
   if (time > 10) {
-    res = "Selamat siang hari •>•"
+    res = "Good afternoon"
   }
   if (time >= 15) {
-    res = "Selamat sore hari •>•"
+    res = "Good afternoon"
   }
   if (time >= 18) {
-    res = "Selamat malam hari •>•"
+    res = "Good Night"
   }
   return res
 }
