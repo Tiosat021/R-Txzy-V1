@@ -50,14 +50,14 @@ global.wait = '「 ⏱️ 」Proses...'
 global.eror = '「❗」Server Error'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.watermark = '© SATTbotss<><>' //change the watermark 
-global.image = 'https://telegra.ph/file/aa2f830bfcfb6b8f0b91b.jpg' //change the image
-global.thumbfoto = 'https://telegra.ph/file/aa2f830bfcfb6b8f0b91b.jpg'
+global.image = 'https://telegra.ph/file/1f50cd24dcafb38d9eda2.jpg' //change the image
+global.thumbfoto = 'https://telegra.ph/file/1f50cd24dcafb38d9eda2.jpg'
 
 // image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
-global.kandang = 'https://telegra.ph/file/aa2f830bfcfb6b8f0b91b.jpg'
-global.kolam = 'https://telegra.ph/file/aa2f830bfcfb6b8f0b91b.jpg'
-global.thanks = 'https://telegra.ph/file/aa2f830bfcfb6b8f0b91b.jpg'
+global.kandang = 'https://telegra.ph/file/1f50cd24dcafb38d9eda2.jpg'
+global.kolam = 'https://telegra.ph/file/1f50cd24dcafb38d9eda2.jpg'
+global.thanks = 'https://telegra.ph/file/1f50cd24dcafb38d9eda2.jpg'
 
 global.multiplier = 9999999 // Semakin tinggi, semakin sulit naik level
 
