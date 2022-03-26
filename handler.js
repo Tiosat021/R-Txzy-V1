@@ -1,5 +1,8 @@
 // R-Txzy Recode
 // Mursid S
+// BOTCAHX
+// AlyaaXzy
+// TAMBAH BOLEH HAPUS JANGAN
 
 let util = require('util')
 let fetch = require('node-fetch')
@@ -403,8 +406,8 @@ module.exports = {
           if (chat.welcome) {
             let groupMetadata = await this.groupMetadata(jid)
             for (let user of participants) {
-              let kai = await(await fetch('https://telegra.ph/file/e8a205ef7a8fcff0de975.jpg')).buffer()
-              let poi = await(await fetch('https://telegra.ph/file/e8a205ef7a8fcff0de975.jpg')).buffer()
+              let kai = await(await fetch('https://telegra.ph/file/c7b7c8579a8663f736a30.jpg')).buffer()
+              let poi = await(await fetch('https://telegra.ph/file/c7b7c8579a8663f736a30.jpg')).buffer()
               text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'ようこそ Youkuso, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
                   (chat.sBye || this.bye || conn.bye || '左様なら Sayounara, @user!')).replace(/@user/g, '@' + user.split`@`[0])
                 let wel = `Welcome Message`
