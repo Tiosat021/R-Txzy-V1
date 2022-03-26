@@ -8,31 +8,34 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭═══════════════════════⬣
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪〕 ❉──────
+╭══════════════════⬣
+║╭──❉ 〔 %me 〕 ─❉
 ║│➸Hai, %name!
+║│
 ║│➸Tersisa *%limit Limit*
 ║│➸Role *%role*
 ║│➸Level *%level (%exp / %maxexp)*
 ║│➸[%xp4levelup]
 ║│➸%totalexp XP secara Total
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TANGGAL⳹ ❋ཻུ۪۪〕 ❉──────
+║│
 ║│➸Hari: *%week %weton*
 ║│➸Tanggal: *%date*
 ║│➸WaktuIslam:*%dateIslamic*
 ║│➸Waktu: *%time*
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TIME⳹ ❋ཻུ۪۪〕 ❉──────
+║│
 ║│➸Uptime: *%uptime (%muptime)*
 ║│➸Database: %rtotalreg dari %totalreg
+║│➸Github :
+║│➸%github
 ║│➸Memory Used : 
 ║│➸${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ╰─────────❉
 %readmore`.trimStart(),
-  header: '*║╭──❉ 〔%category〕*',
+  header: '*║╭──❉ 〔%category〕─❉*',
   body: '║│➸%cmd %islimit %isPremium',
   footer: '*╰───❉*\n',
   after: `
-  ⬣━〔Powered By Rozi〕━⬣
+  ⬣━〔 By Tio 〕━⬣
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -221,21 +224,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪ 〕 ❉────── 
-║│➸⏰Aktif selama ${uptime}
-║│➸⚡Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│➸zifabotz
-║│➸ *${conn.blocklist.length}* Terblock
-║│➸ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-║│➸ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-╰─────────❉
-_____••••••••• 
-(_𝙱𝚎𝚋𝚎𝚛𝚊𝚙𝚊 𝚋𝚞𝚝𝚝𝚘𝚗 𝚊𝚍𝚊 𝚢𝚐 𝚐𝚊𝚔 𝚋𝚎𝚛𝚏𝚞𝚗𝚐𝚜𝚒_)
-
-▌│█║▌║▌║║▌║▌║█│▌ `.trim(),
-                        "footerText": "⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪⸙ by.rozi",
-                        "buttonText": "««TAMPILAN MENU««",
+                        "description": `╭═══════════════❉
+║╭──❉ 〔 ꧁ঔৣ☠︎SATTbotss❦☠︎ঔৣ꧂ 〕 ─❉
+║│➸Aktif selama ${uptime}
+║│➸Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+║│➸${conn.blocklist.length} Terblock
+║│➸${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
+║│➸${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
+╰─────────❉ `.trim(),
+                        "footerText": "꧁ঔৣ☠︎SATTbotss❦☠︎ঔৣ꧂",
+                        "buttonText": "click Here",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -398,15 +396,15 @@ _____•••••••••
                                 "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
                             }, {
                                 "rows": [{
-                                    "title": "|👩‍💻| Owner ZIFABOTZ",
-                                    "description": "pemilik ZIFABOTZ",
+                                    "title": "|👩‍💻| Owner SATTbotss<><>",
+                                    "description": "pemilik SATTbotss<><>",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "|🛠|Status bot",
                                     "description": "Status dan informasi bot",
                                     "rowId": ".botstatus"
                                 }, {
-                                    "title": "|🖨️| Rules zifabotz",
+                                    "title": "|🖨️| Rules SATTbotss<><>",
                                     "description": "Mari menaati peraturan demi Kita bersama",
                                     "rowId": ".rules"
                                 }, {
