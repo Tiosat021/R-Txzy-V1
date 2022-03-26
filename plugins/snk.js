@@ -3,9 +3,9 @@ let { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn }) => {
     let kontol = `╭─────[ *RULES* ]─────✧
 ┴
-│¹ Dilarang Hina zifabotz / Owner
+│¹ Dilarang Hina Bot / Owner
 │² Dilarang Spam Command
-│³ Dilarang Kirim Virtex ke zifabotz
+│³ Dilarang Kirim Virtex ke Bot
 │⁴ Dilarang Spam Menu Ga Jelas
 │⁵ Dilarang Telp / Vc
 │⁶ Dilarang Culik Bot
