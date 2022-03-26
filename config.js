@@ -1,10 +1,12 @@
 // Thanks For Allah
 // AlyaaXzy
 // BOTCAHX
+// Mursid S
+// Jangan di hapus tambahin boleh
 
 
 let fs = require('fs')
-global.owner = ['6285828764046', '6285828764046','6285828764046', '6285828764046', '6285828764046'] // Letakan nomor kamu disini
+global.owner = ['62895622816517', '62895622816517','62895622816517', '62895622816517', '62895622816517'] // Letakan nomor kamu disini
 global.APIs = { // API Prefix
   // nama: 'https://website'
   hardianto: 'https://hardianto-chan.herokuapp.com',
@@ -41,21 +43,21 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'rozi'
-global.author = 'zifa'
+global.packname = 'Tio'
+global.author = 'MursidXzy'
 
-global.wait = '「 ⏱️ 」TUNGGU ZIFA lagi proses_-...'
-global.eror = '「❗」Server LAGI ERROR COK!'
+global.wait = '「 ⏱️ 」Proses...'
+global.eror = '「❗」Server Error'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '© zifabotz' //change the watermark 
-global.image = 'https://telegra.ph/file/052ca138a613c8859756f.jpg' //change the image
-global.thumbfoto = 'https://telegra.ph/file/127d7c0701bf442387c94.jpg'
+global.watermark = '© SATTbotss<><>' //change the watermark 
+global.image = 'https://telegra.ph/file/3378e6981054be96a8628.jpg' //change the image
+global.thumbfoto = 'https://telegra.ph/file/3378e6981054be96a8628.jpg'
 
 // image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
-global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
-global.thanks = 'https://telegra.ph/file/01917f7782b70de8f418d.jpg'
+global.kolam = 'https://telegra.ph/file/3378e6981054be96a8628.jpg'
+global.thanks = 'https://telegra.ph/file/3378e6981054be96a8628.jpg'
 
 global.multiplier = 9999999 // Semakin tinggi, semakin sulit naik level
 
