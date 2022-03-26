@@ -11,6 +11,7 @@ BIG THANKS TO
 ║│• RFK Team
 ║│• Mursid S
 ║│• Syahrul
+║│• Rozi/Zifabot
 ║│• Rasel Comel
 ║│• Hardianto
 ║│• Fatur
