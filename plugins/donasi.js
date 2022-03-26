@@ -2,10 +2,12 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(bank)).buffer(), `
 ┌────〔 Donasi 〕
 │• Gopay :
-│  08956 KALAU UDAH PUAS TINGGAL SV CARANYA GINI
+│  085762224918
 │• Dana :
 │  0895622816517
-│  088233832771
+│• Pulsa :
+│  085762224918
+│  0895622816517
 │• Saweria :
 │  saweria.co/mursid25
 │• Owner
