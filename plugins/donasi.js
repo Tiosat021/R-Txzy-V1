@@ -2,7 +2,7 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(bank)).buffer(), `
 ┌────〔 Donasi 〕
 │• Gopay :
-│  0895622816517
+│  08956 KALAU UDAH PUAS TINGGAL SV CARANYA GINI
 │• Dana :
 │  0895622816517
 │  088233832771
