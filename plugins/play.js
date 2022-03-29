@@ -27,11 +27,12 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let { dl_link, thumb, title, filesize, filesizeF } = yt
   await conn.send2ButtonLoc(m.chat, await (await fetch(thumb)).buffer(), `
 ╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪⸙ *PLAY ZIFABOTZ *⳹ ❋ཻུ۪۪ 〕 ❉──────
-║│➸ *Judul:* ${title}
-║│➸ *Ukuran File Audio:* ${filesizeF}
-║│➸ *Ukuran File Video:* ${yt2.filesizeF}
-║│➸ *Server y2mate:* ${usedServer}
+║╭──❉〔 Play BootsSATT--<> 〕──❉
+║│• *Judul:* ${title}
+║│• *Ukuran File Audio:* ${filesizeF}
+║│• *Ukuran File Video:* ${yt2.filesizeF}
+║│• *Server y2mate:* ${usedServer}
+║│• *Instagram : instagram.com/satriyosawalll?r=nametag
 ╰─────────❉
 `.trim(), watermark, 'Audio', `.yta ${vid.url}`, 'Video', `.yt ${vid.url}`)
 }
